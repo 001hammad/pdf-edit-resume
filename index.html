@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic - Resume - Builder</title>
+</head>
+<body>
+
+    <div id="main-container">
+        
+        <form id="resume-form">
+
+            <h1>
+                Dynamic Resume Builder
+            </h1>   
+
+            <h3>Personal Information</h3>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="number" name="phone" id="phone" placeholder="Enter your phone" required><br>
+            <input type="file" id="picture" name="picture" accept="image/*" class="photo" required>
+
+
+            <h3>Education</h3>
+            <label for="degree">Degree:</label>
+            <input type="text" name="degree" id="degree" placeholder="Enter your degree" required><br>
+            <label for="institution">Institution:</label>
+            <input type="text" name="institution" id="institution" placeholder="Enter institution" required><br>
+            <label for="year">Year:</label>
+            <input type="number" name="year" id="year" placeholder="Enter year" required>
+
+           
+            <h3>Work Experience</h3>
+            <label for="jobtitle">Job Title:</label>
+            <input type="text" name="jobtitle" id="jobtitle" placeholder="Enter Title" required><br>
+            <label for="company">Company:</label>
+            <input type="text" name="company" id="company" placeholder="Enter company" required><br>
+            <label for="year">Year:</label>
+            <input type="number" name="year" id="year" placeholder="Enter year" required><br>
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" cols="3" placeholder="Write a description"></textarea>
+
+
+            <h3>Skills</h3>
+            <input type="text" name="skills" id="skills" placeholder="Enter skills" required><br>
+            <input type="text" name="skills1" id="skills1" placeholder="Optional section"><br>
+            <input type="text" name="skills2" id="skills2" placeholder="Optional section"><br>
+
+            <button id="submit-button">Generate Resume</button>
+
+        </form>
+    
+
+   <div id="generated-container" ></div>
+   <button id="download-pdf"><b>Download as PDF</b></button>
+   </div>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>

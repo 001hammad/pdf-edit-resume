@@ -1,0 +1,164 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+label{
+    display: flex;
+    margin-bottom: 4px;
+}
+
+input{
+    margin-bottom: 8px;
+    width: 104%;
+    height:  35px;
+    border: none;
+    background: #e1e8f4;
+    border-radius: 6px;
+}
+
+.photo{
+    background: none;
+}
+
+
+#main-container{
+    display: block;
+    justify-content: center;
+    width: 40%;
+
+    
+}
+
+textarea{
+    width: 104%;
+    background: #e1e8f4;
+}
+
+form{
+    border: 2px solid gray;
+    height: fit-content;
+    padding: 30px;
+}
+
+h3{
+    text-decoration: underline;
+}
+
+button{
+    background: rgb(58, 195, 58);
+    padding: 9px;
+    float: inline-end;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 9%;
+}
+button:hover{
+    background: #6fcb86;
+}
+
+.generated-container{
+    background: #9b6b6b;
+}
+
+
+/* --------------------typescript portion------------------------ */
+
+
+.main-output{
+    display: flex;
+    font-family: cursive;
+    border: 1px solid #0D1282 ;
+    padding: 30px;
+    /* box-shadow: 5px 5px 5px rgba(223, 15, 15, 4.5); */
+
+    
+}
+
+.left-sec{
+    background: #0D1282;
+    color: white;
+    text-align: center;
+    width: 40%;
+    padding: 10px;
+}
+
+.right-sec{
+    background: #EEEDED;
+    padding: 10px;
+    width: 55%;
+}
+
+img{
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-top: 14px;
+}
+
+.right-inner-content{
+    margin-left: 12px;
+}
+
+/* .left-inner-content{
+    margin-left: 0;
+} */
+
+.ts-headings{
+    text-decoration: underline;
+    text-decoration-color: #0D1282;
+}
+
+#download-pdf{
+    margin-right: 10%;
+}
+
+
+
+#generated-container{
+    margin-top: 10%;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+ 
+    #main-container{
+        display: block;
+        justify-content: center;
+        width: 90%;
+        
+    }
+
+    button{
+        margin-top: 19%;
+        margin-right: 21%;
+    }
+
+.left-sec{
+    margin-right: 20px;
+}
+
+    
+#generated-container{
+    margin-top: 20%;
+}
+}
+
+
+@media print {
+    /* yahaan apne print layout ke liye styles likhein */
+    
+    .left-sec {
+      background-color: #0D1282;
+    }
+    .right-sec {
+      background-color: #FEFAE0;
+    }
+  }
+  
+  
+
