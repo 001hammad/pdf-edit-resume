@@ -98,14 +98,14 @@ interface ResumeDataTypes  {
              <div class='left-sec'>
                  <img src='${resumeForm.picture}' alt='profile-pic' width='150' height='150' class="photo">
                  <div class='left-inner-content'>
-                     <p contenteditable="true"><u><h4>Professional Summary</h4></u><br>${resumeForm.summary}</p>
-                     <p contenteditable="true"><u><h4>Career Objective</h4></u><br>${resumeForm.objective}</p>
+                     <p contenteditable="true"><u><h4 class="Professional-Summary">Professional Summary</h4></u><br>${resumeForm.summary}</p>
+                     <p contenteditable="true"><u><h4 class="Career-Objective">Career Objective</h4></u><br>${resumeForm.objective}</p>
                  </div>
              </div>
  
              <div class='right-sec'>
                  <div class='right-inner-content'>
-                     <h1 contenteditable="true">${resumeForm.title}</h1>
+                     <h1 contenteditable="true" class="title">${resumeForm.title}</h1>
                      <h3 class='ts-headings'>Personal Information</h3>
                      <p contenteditable="true"><b>Full Name:</b> ${resumeForm.name}</p>
                      <p contenteditable="true"><b>Email Id:</b> ${resumeForm.email}</p>
