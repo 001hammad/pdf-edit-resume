@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial;
     display: flex;
     justify-content: center;
 }
@@ -12,7 +12,7 @@ label{
 
 input{
     margin-bottom: 8px;
-    width: 104%;
+    width: 102%;
     height:  35px;
     border: none;
     background: #e1e8f4;
@@ -33,9 +33,31 @@ input{
 }
 
 textarea{
-    width: 104%;
+    width: 102%;
+    border-radius: 12px;
     background: #e1e8f4;
+    height: 80px;
 }
+
+.summary-text {
+    font-size: 14px;
+    font-family: Open Sans;
+    line-height: 1.7;
+    text-align: justify;
+    word-spacing: 0.7;
+    letter-spacing: 0.5;
+  }
+  
+
+  .objective{
+    font-size: 14px;
+    font-family: Open Sans;
+    line-height: 1.7;
+    text-align: justify;
+    word-spacing: 0.7;
+    letter-spacing: 0.5;
+  }
+  
 
 form{
     border: 2px solid gray;
@@ -49,7 +71,7 @@ h3{
 
 button{
     background: rgb(58, 195, 58);
-    padding: 9px;
+    padding: 12px;
     float: inline-end;
     border: none;
     color: white;
@@ -66,18 +88,17 @@ button:hover{
 }
 
 
-/* --------------------typescript portion------------------------ */
 
 
 .main-output{
     display: flex;
-    font-family: cursive;
-    border: 1px solid #0D1282 ;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #0D1282;
     padding: 30px;
-    /* box-shadow: 5px 5px 5px rgba(223, 15, 15, 4.5); */
-
-    
-}
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
 
 .left-sec{
     background: #0D1282;
@@ -103,13 +124,16 @@ img{
     margin-left: 12px;
 }
 
-/* .left-inner-content{
-    margin-left: 0;
-} */
+
 
 .ts-headings{
     text-decoration: underline;
     text-decoration-color: #0D1282;
+    background: #0D1282;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    opacity: 90%;
 }
 
 #download-pdf{
@@ -131,7 +155,29 @@ img{
         justify-content: center;
         width: 90%;
         
+        
     }
+
+
+    .right-sec{
+        width: 100%;
+        border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    }
+    .main-output{
+        display: block;
+        border: none;
+        margin-right: 20px;
+        padding: 0%;
+        box-shadow: none;
+      }
+
+    .photo{
+        height: 100px;
+        width: 100px;
+    }
+    
 
     button{
         margin-top: 19%;
@@ -139,7 +185,11 @@ img{
     }
 
 .left-sec{
-    margin-right: 20px;
+    margin-right: 10px;
+    width: 100%;
+    margin-left: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
     
@@ -150,13 +200,10 @@ img{
 
 
 @media print {
-    /* yahaan apne print layout ke liye styles likhein */
+   
     
     .left-sec {
       background-color: #0D1282;
-    }
-    .right-sec {
-      background-color: #FEFAE0;
     }
   }
   

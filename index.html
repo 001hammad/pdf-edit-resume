@@ -17,40 +17,51 @@
             </h1>   
 
             <h3>Personal Information</h3>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+            <label for="title">Professional Title:</label>
+            <input type="text" name="title" id="title" placeholder="Web Developer / Web Designer" required><br>
+            
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required><br>
+            <input type="email" name="email" id="email" placeholder="your.email@example.com" required><br>
+            <label for="email">Address:</label>
+            <input type="text" name="address" id="address" placeholder="House No f-abc sector-4 area" required><br>
             <label for="phone">Phone:</label>
-            <input type="number" name="phone" id="phone" placeholder="Enter your phone" required><br>
+            <input type="number" name="phone" id="phone" placeholder="123-456-7890" required><br>
+            <label for="summary">Professional Summary:</label>
+            <textarea name="summary" id="summary" cols="10" placeholder="Briefly describe your experience and goals" required></textarea>
+            <label for="objective">Career Objective::</label>
+            <textarea name="objective" id="objective" cols="10" placeholder="Your career aspiration" required></textarea>
             <input type="file" id="picture" name="picture" accept="image/*" class="photo" required>
 
 
             <h3>Education</h3>
-            <label for="degree">Degree:</label>
-            <input type="text" name="degree" id="degree" placeholder="Enter your degree" required><br>
+            <label for="degree">Qualification:</label>
+            <input type="text" name="degree" id="degree" placeholder="Bachelor's/Master's Degree" required><br>
             <label for="institution">Institution:</label>
-            <input type="text" name="institution" id="institution" placeholder="Enter institution" required><br>
-            <label for="year">Year:</label>
-            <input type="number" name="year" id="year" placeholder="Enter year" required>
+            <input type="text" name="institution" id="institution" placeholder="Name of Institution" required><br>
+            <label for="year">Graduation Year:</label>
+            <input type="number" name="year" id="year" placeholder="YYYY" required>
 
            
             <h3>Work Experience</h3>
             <label for="jobtitle">Job Title:</label>
-            <input type="text" name="jobtitle" id="jobtitle" placeholder="Enter Title" required><br>
-            <label for="company">Company:</label>
-            <input type="text" name="company" id="company" placeholder="Enter company" required><br>
-            <label for="year">Year:</label>
-            <input type="number" name="year" id="year" placeholder="Enter year" required><br>
+            <input type="text" name="jobtitle" id="jobtitle" placeholder="Job Title" required><br>
+            <label for="company">Organization:</label>
+            <input type="text" name="company" id="company" placeholder="Company Name" required><br>
+            <label for="year">Employment Duration::</label>
+            <input type="date" name="year" id="year" placeholder="YYYY - YYYY" required><br>
             <label for="description">Description:</label>
-            <textarea name="description" id="description" cols="3" placeholder="Write a description"></textarea>
+            <textarea name="description" id="description" cols="3" placeholder="Briefly describe job responsibilities"></textarea>
 
 
-            <h3>Skills</h3>
-            <input type="text" name="skills" id="skills" placeholder="Enter skills" required><br>
-            <input type="text" name="skills1" id="skills1" placeholder="Optional section"><br>
-            <input type="text" name="skills2" id="skills2" placeholder="Optional section"><br>
-
+            <div id="skills-section">
+                <label for="skill"><h3>Skills:</h3></label>
+                <input type="text" name="skill" id="skill" required><br>
+                <div id="skills-list"></div>
+                <span id="add-skill-text">Add Skill</span>
+            </div>
+            
             <button id="submit-button">Generate Resume</button>
 
         </form>
