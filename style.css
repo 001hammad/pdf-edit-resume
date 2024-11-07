@@ -124,7 +124,12 @@ img{
     margin-left: 12px;
 }
 
-
+.copyright-text{
+    /* color: green; */
+    opacity: 20%;
+    display: flex;
+    justify-content: center;
+}
 
 .ts-headings{
     text-decoration: underline;
