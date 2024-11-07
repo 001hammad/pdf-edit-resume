@@ -226,8 +226,15 @@ img{
     
     .left-sec {
       background-color: #0D1282;
+      width: 100%;
     }
+
+    .right-sec{
+        width: 100%;
   }
   
-  
+  .main-output{
+    display: block;
+  }
+}
 
